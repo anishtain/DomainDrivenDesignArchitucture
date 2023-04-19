@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include=".commons\primitives\Aggregate.cs" />
+    <Compile Include=".commons\primitives\Entity.cs" />
+    <Compile Include=".commons\primitives\ValueObject.cs" />
+  </ItemGroup>
+
+</Project>

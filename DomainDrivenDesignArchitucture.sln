@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "srcs", "srcs", "{034F59D3-0469-420D-BD70-48011A8875FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5E27F121-7189-4E40-945C-24F8B253916E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "applications", "applications", "{309D9C81-96A7-4E0E-AA2C-842F1431E63C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domains", "domains", "{789D0AE8-8896-43A1-8258-A0867ADD3C89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructures", "infrastructures", "{F9FB2668-5203-4A41-AE87-E169F3BF476A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentations", "presentations", "{7ED1A201-90B5-48AF-B481-10E824C80264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "src\domain\Models\Models.csproj", "{38F2B95A-7783-41C6-B7F5-D8047E3967C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38F2B95A-7783-41C6-B7F5-D8047E3967C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F2B95A-7783-41C6-B7F5-D8047E3967C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F2B95A-7783-41C6-B7F5-D8047E3967C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F2B95A-7783-41C6-B7F5-D8047E3967C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{309D9C81-96A7-4E0E-AA2C-842F1431E63C} = {034F59D3-0469-420D-BD70-48011A8875FA}
+		{789D0AE8-8896-43A1-8258-A0867ADD3C89} = {034F59D3-0469-420D-BD70-48011A8875FA}
+		{F9FB2668-5203-4A41-AE87-E169F3BF476A} = {034F59D3-0469-420D-BD70-48011A8875FA}
+		{7ED1A201-90B5-48AF-B481-10E824C80264} = {034F59D3-0469-420D-BD70-48011A8875FA}
+		{38F2B95A-7783-41C6-B7F5-D8047E3967C5} = {789D0AE8-8896-43A1-8258-A0867ADD3C89}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB304037-A0C1-41EB-9909-B62A61B5D1FD}
+	EndGlobalSection
+EndGlobal
