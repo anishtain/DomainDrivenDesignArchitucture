@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include=".commons\contracts\IDomainEvent.cs" />
     <Compile Include=".commons\primitives\Aggregate.cs" />
     <Compile Include=".commons\primitives\Entity.cs" />
     <Compile Include=".commons\primitives\ValueObject.cs" />
