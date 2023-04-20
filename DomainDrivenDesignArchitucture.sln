@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "src\domain\Models
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presistant", "src\infrastructure\Presistant\Presistant.csproj", "{1BB22E72-B232-4DC9-AD3B-7A12D51DAFE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usecases", "src\application\Usecases\Usecases.csproj", "{F06CE61B-B16E-4C34-8899-F2C13DBD56B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Usecases", "src\application\Usecases\Usecases.csproj", "{F06CE61B-B16E-4C34-8899-F2C13DBD56B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "src\infrastructure\Repositories\Repositories.csproj", "{19142C97-3269-451F-A77C-32ACB931FDEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F06CE61B-B16E-4C34-8899-F2C13DBD56B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06CE61B-B16E-4C34-8899-F2C13DBD56B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06CE61B-B16E-4C34-8899-F2C13DBD56B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19142C97-3269-451F-A77C-32ACB931FDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19142C97-3269-451F-A77C-32ACB931FDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19142C97-3269-451F-A77C-32ACB931FDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19142C97-3269-451F-A77C-32ACB931FDEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{38F2B95A-7783-41C6-B7F5-D8047E3967C5} = {789D0AE8-8896-43A1-8258-A0867ADD3C89}
 		{1BB22E72-B232-4DC9-AD3B-7A12D51DAFE3} = {F9FB2668-5203-4A41-AE87-E169F3BF476A}
 		{F06CE61B-B16E-4C34-8899-F2C13DBD56B4} = {309D9C81-96A7-4E0E-AA2C-842F1431E63C}
+		{19142C97-3269-451F-A77C-32ACB931FDEF} = {F9FB2668-5203-4A41-AE87-E169F3BF476A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB304037-A0C1-41EB-9909-B62A61B5D1FD}
