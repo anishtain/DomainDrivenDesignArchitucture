@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include=".commons\bases\IRepository.cs" />
+    <Compile Include=".commons\bases\SqlIdentityRepository.cs" />
+    <Compile Include=".commons\bases\SqlRepository.cs" />
+    <Compile Include=".commons\bases\SqldentityUnitOfWork.cs" />
+    <Compile Include=".commons\bases\SqlUnitOfWork.cs" />
+    <Compile Include=".commons\extensions\QueryableExtensions.cs" />
     <Compile Include=".commons\primitivesConfig\ApprovableEntityConfig.cs" />
     <Compile Include=".commons\primitivesConfig\AuditableEntityConfig.cs" />
     <Compile Include=".commons\primitivesConfig\BaseEntityConfig.cs" />
@@ -15,6 +21,7 @@
     <Compile Include=".commons\primitives\AuditableEntity.cs" />
     <Compile Include=".commons\primitives\BaseEntity.cs" />
     <Compile Include=".commons\primitives\SoftDeletableEntity.cs" />
+    <Compile Include=".commons\sharedDatas\ListResult.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +41,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\domain\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\..\domain\Models\Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="identities\" />
+    <Folder Include="repositories\" />
   </ItemGroup>
 
 </Project>

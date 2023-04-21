@@ -2,7 +2,7 @@
 
 internal abstract class AuditableEntity<T> : BaseEntity<T>
 {
-    internal AuditableEntity(T id, string creatorId, DateTime creationDate) : base(id, creatorId, creationDate) { }
+    internal AuditableEntity(T id) : base(id) { }
 
     internal string UpdatorId { get; set; }
 

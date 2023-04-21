@@ -1,4 +1,5 @@
 ﻿namespace DomainDrivenDesignArchitucture.Infrastructure.Presistant.contexts;
+
 internal class SqlContext : DbContext
 {
     public SqlContext(DbContextOptions options) : base(options) { }

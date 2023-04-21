@@ -2,7 +2,7 @@
 
 internal abstract class SoftDeletableEntity<T> : ApprovableEntity<T>
 {
-    internal SoftDeletableEntity(T id, string creatorId, DateTime creationDate) : base(id, creatorId, creationDate) { }
+    internal SoftDeletableEntity(T id) : base(id) { }
 
     internal bool IsDeleted { get; set; }
 
