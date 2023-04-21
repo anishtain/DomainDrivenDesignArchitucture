@@ -4,6 +4,7 @@ using DomainDrivenDesignArchitucture.Infrastructure.Presistant.contexts;
 using DomainDrivenDesignArchitucture.Infrastructure.Presistant.models.schemas.clients.roles;
 using DomainDrivenDesignArchitucture.Infrastructure.Presistant.models.schemas.clients.users;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -67,6 +68,8 @@ public static class DependencyInjection
             services.AddScoped(typeof(IRepository<,>), typeof(SqlRepository<,>));
         }
 
+
+        services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
 
         return services;
     }

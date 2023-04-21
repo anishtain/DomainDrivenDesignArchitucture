@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include=".extensions\Migrator.cs" />
+    <Compile Include=".filters\Authorize.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include=".middlewares\" />
+    <Folder Include=".commons\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\application\Usecases\Usecases.csproj" />
+    <ProjectReference Include="..\..\domain\Models\Models.csproj" />
+    <ProjectReference Include="..\..\infrastructure\Presistant\Presistant.csproj" />
+  </ItemGroup>
+
+</Project>
