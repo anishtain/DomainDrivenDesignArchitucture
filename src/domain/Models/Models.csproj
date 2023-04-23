@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -11,6 +11,7 @@
     <Compile Include=".commons\contracts\IDomainEvent.cs" />
     <Compile Include=".commons\exceptions\ExceptionLevel.cs" />
     <Compile Include=".commons\exceptions\ExceptionType.cs" />
+    <Compile Include=".commons\permissions\GeneralPermission.cs" />
     <Compile Include=".commons\primitives\Aggregate.cs" />
     <Compile Include=".commons\primitives\Entity.cs" />
     <Compile Include=".commons\primitives\ValueObject.cs" />
