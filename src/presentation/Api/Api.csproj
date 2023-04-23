@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include=".commons\endpoints\BaseController.cs" />
+    <Compile Include=".commons\endpoints\Error.cs" />
+    <Compile Include=".commons\endpoints\ListResult.cs" />
+    <Compile Include=".commons\endpoints\Result.cs" />
     <Compile Include=".extensions\Migrator.cs" />
     <Compile Include=".filters\Authorize.cs" />
+    <Compile Include=".filters\Validation.cs" />
+    <Compile Include=".middlewares\GlobalExceptionMiddelware.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,8 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include=".middlewares\" />
-    <Folder Include=".commons\" />
   </ItemGroup>
 
   <ItemGroup>
