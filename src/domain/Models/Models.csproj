@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include=".commons\exceptions\BaseException.cs" />
     <Compile Include=".commons\contracts\IDomainEvent.cs" />
+    <Compile Include=".commons\exceptions\ExceptionLevel.cs" />
+    <Compile Include=".commons\exceptions\ExceptionType.cs" />
     <Compile Include=".commons\primitives\Aggregate.cs" />
     <Compile Include=".commons\primitives\Entity.cs" />
     <Compile Include=".commons\primitives\ValueObject.cs" />
