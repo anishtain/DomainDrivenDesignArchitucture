@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Usecases", "src\application
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "src\domain\Contracts\Contracts.csproj", "{610CD382-91E4-49B6-A87A-3D54A9093205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\presentation\Api\Api.csproj", "{B160269D-BCBE-46A4-9CC1-47D409915F01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\presentation\Api\Api.csproj", "{B160269D-BCBE-46A4-9CC1-47D409915F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
