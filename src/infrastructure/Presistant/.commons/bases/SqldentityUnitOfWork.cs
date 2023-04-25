@@ -8,7 +8,7 @@ internal class SqldentityUnitOfWork : IUnitOfWork
 {
     private readonly SqlIdentityContext _context;
 
-    internal SqldentityUnitOfWork(SqlIdentityContext context)
+    public SqldentityUnitOfWork(SqlIdentityContext context)
     {
         _context = context;
     }

@@ -19,16 +19,13 @@ public static class DependencyInjection
     {
         string connectionString = configuration.GetConnectionString("Default");
 
-        services.AddDbContext<SqlContext>(opt => opt.UseSqlServer(connectionString));
+        
 
         if (isIdentity)
         {
-            services.AddScoped<IUnitOfWork, SqldentityUnitOfWork>();
-            services.AddScoped(typeof(IRepository<,>), typeof(SqlIdentityRepository<,>));
-            services.AddScoped<IUserStore, identities.UserStore>();
-            services.AddScoped<IRoleStore, identities.RoleStore>();
+            services.AddDbContext<SqlIdentityContext>();
 
-            services.Configure<commons.sharedDatas.TokenConfig>(opt => 
+            services.Configure<commons.sharedDatas.TokenConfig>(opt =>
             {
                 opt.Audience = configuration["Secret:TokenConfig:Audience"];
                 opt.Secret = configuration["Secret:TokenConfig:Secret"];
@@ -61,15 +58,20 @@ public static class DependencyInjection
 
                 });
 
+            services.AddScoped(typeof(IRepository<,>), typeof(SqlIdentityRepository<,>));
+            services.AddScoped<IUnitOfWork, SqldentityUnitOfWork>();
+            services.AddScoped<IUserStore, identities.UserStore>();
+            services.AddScoped<IRoleStore, identities.RoleStore>();
         }
         else
         {
+            services.AddDbContext<SqlContext>();
             services.AddScoped<IUnitOfWork, SqlUnitOfWork>();
             services.AddScoped(typeof(IRepository<,>), typeof(SqlRepository<,>));
         }
 
 
-        services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         return services;
     }

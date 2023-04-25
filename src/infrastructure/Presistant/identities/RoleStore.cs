@@ -23,7 +23,7 @@ internal class RoleStore : IRoleStore
     {
         var role = await _roleManager.FindByNameAsync(name);
 
-        if (!string.IsNullOrEmpty(role.Name))
+        if (role is not null)
         {
             return;
         }

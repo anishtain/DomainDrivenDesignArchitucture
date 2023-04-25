@@ -2,9 +2,14 @@
 
 internal class SqlContext : DbContext
 {
-    public SqlContext(DbContextOptions options) : base(options) { }
+    public SqlContext() : base() { }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
 
+        optionsBuilder.UseSqlServer("Integrated Security = SSPI; Persist Security Info=False; Initial Catalog = DomainDrivenDesignDb; Data Source =.");
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

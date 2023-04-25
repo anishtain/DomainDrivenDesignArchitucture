@@ -62,16 +62,16 @@ internal class UserStore : IUserStore
 
         var role = await _roleManager.FindByNameAsync(roleName);
 
-        await _userManager.AddToRoleAsync(user, role.Name);
-
         await _userManager.CreateAsync(user);
+
+        await _userManager.AddToRoleAsync(user, role.Name);
     }
 
     public async Task<string> GetCurrentUserId()
     {
         var authorizationHeader = _httpContextAccessor.HttpContext.Request.Headers.Authorization;
 
-        if(!string.IsNullOrEmpty(authorizationHeader))
+        if (!string.IsNullOrEmpty(authorizationHeader))
         {
             var token = authorizationHeader.ToString().Split(' ')[0];
 

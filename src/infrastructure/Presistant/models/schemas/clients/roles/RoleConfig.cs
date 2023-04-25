@@ -8,6 +8,9 @@ internal class RoleConfig : IEntityTypeConfiguration<Role>
 {
     public void Configure(EntityTypeBuilder<Role> builder)
     {
+        builder.Property(x => x.Id)
+            .ValueGeneratedOnAdd();
+
         builder.Property(x => x.PersianName)
             .HasColumnType("nvarchar(128)");
     }
