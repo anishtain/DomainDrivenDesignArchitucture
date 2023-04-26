@@ -7,10 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include=".commons\exceptions\apiCallExceptions\ApiCallInternalServerErrorException.cs" />
+    <Compile Include=".commons\exceptions\apiCallExceptions\ApiCallNotFoundException.cs" />
+    <Compile Include=".commons\exceptions\apiCallExceptions\ApiCallUnauthorizedException.cs" />
+    <Compile Include=".commons\exceptions\apiCallExceptions\ApiCallRequestTimeoutException.cs" />
+    <Compile Include=".commons\exceptions\apiCallExceptions\ApiCallBadRequestException.cs" />
     <Compile Include=".commons\exceptions\BaseException.cs" />
     <Compile Include=".commons\contracts\IDomainEvent.cs" />
-    <Compile Include=".commons\exceptions\ExceptionLevel.cs" />
-    <Compile Include=".commons\exceptions\ExceptionType.cs" />
+    <Compile Include=".commons\enums\ExceptionLevel.cs" />
+    <Compile Include=".commons\enums\ExceptionType.cs" />
     <Compile Include=".commons\permissions\GeneralPermission.cs" />
     <Compile Include=".commons\primitives\Aggregate.cs" />
     <Compile Include=".commons\primitives\Entity.cs" />

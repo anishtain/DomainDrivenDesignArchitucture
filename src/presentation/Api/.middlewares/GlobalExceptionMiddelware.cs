@@ -1,4 +1,5 @@
-﻿using DomainDrivenDesignArchitucture.Domain.Models.commons.exceptions;
+﻿using DomainDrivenDesignArchitucture.Domain.Models.commons.enums;
+using DomainDrivenDesignArchitucture.Domain.Models.commons.exceptions;
 using DomainDrivenDesignArchitucture.Presentation.Api.commons.endpoints;
 using System.Text;
 using System.Text.Json;

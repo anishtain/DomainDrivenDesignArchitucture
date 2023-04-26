@@ -1,4 +1,6 @@
-﻿namespace DomainDrivenDesignArchitucture.Domain.Models.commons.exceptions;
+﻿using DomainDrivenDesignArchitucture.Domain.Models.commons.enums;
+
+namespace DomainDrivenDesignArchitucture.Domain.Models.commons.exceptions;
 public class BaseException : Exception
 {
     public BaseException(ExceptionType type, ExceptionLevel level, string message) : base(message)

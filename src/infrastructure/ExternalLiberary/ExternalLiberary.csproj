@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>$DomainDrivenDesignArchitucture.Infrastructure.(AssemblyName)</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include=".commons\bases\IRestService.cs" />
+    <Compile Include=".commons\extentions\HttpRequestExtentions.cs" />
+    <Compile Include=".commons\bases\RestApiService.cs" />
+    <Compile Include=".commons\models\RestApiConfig.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\domain\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\..\domain\Models\Models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-﻿namespace DomainDrivenDesignArchitucture.Domain.Models.commons.exceptions;
+﻿namespace DomainDrivenDesignArchitucture.Domain.Models.commons.enums;
 public enum ExceptionLevel
 {
     Domain,

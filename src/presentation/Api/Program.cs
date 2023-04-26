@@ -1,4 +1,5 @@
 using DomainDrivenDesignArchitucture.Application.Usecases;
+using DomainDrivenDesignArchitucture.Infrastructure.ExternalLiberary;
 using DomainDrivenDesignArchitucture.Infrastructure.Presistant;
 using DomainDrivenDesignArchitucture.Presentation.Api.extensions;
 using Microsoft.AspNetCore.Mvc;
@@ -27,6 +28,7 @@ builder.Services.AddApiVersioning(config =>
 
 builder.Services.AddUseCase();
 builder.Services.AddPresistante(builder.Configuration, true);
+builder.Services.AddExternalServices(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -33,6 +33,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\application\Usecases\Usecases.csproj" />
     <ProjectReference Include="..\..\domain\Models\Models.csproj" />
+    <ProjectReference Include="..\..\infrastructure\ExternalLiberary\ExternalLiberary.csproj" />
     <ProjectReference Include="..\..\infrastructure\Presistant\Presistant.csproj" />
   </ItemGroup>
 
